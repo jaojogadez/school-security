@@ -1,4 +1,5 @@
-"use-strict";
+'use strict';
 
-// JS
-import "./modules/form/submit.js";
+// import JS modules
+import "./modules/auth/submit.js";
+import "./modules/dashboard.js";
