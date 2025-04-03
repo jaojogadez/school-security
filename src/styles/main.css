@@ -1,0 +1,36 @@
+@import url("./vars.css");
+
+body {
+    background: linear-gradient(to bottom, var(--background-light), var(--background-dark));
+    color: var(--text-color);
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+.btn-primary:active {
+    transform: scale(0.98);
+}
+.text-muted {
+    color: var(--text-muted) !important;
+}
+.alert-warning {
+    background-color: var(--warning-bg);
+    border-color: var(--warning-border);
+    color: var(--warning-text);
+    font-size: .9em;
+    display: flex;
+    gap: 10px;
+}
+.text-muted a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.text-muted a:hover {
+    text-decoration: underline;
+}

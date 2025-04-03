@@ -1,0 +1,31 @@
+@import url("./vars.css");
+
+.form-signin {
+    max-width: 500px;
+    padding: 2rem;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-label {
+    color: var(--primary-color) !important;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid lightgray;
+    outline: 2px solid var(--primary-color);
+}
+.form-check-input {
+    border-color: var(--primary-color) !important;
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.form-check-input:focus {
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+.form-check-label,
+.form-check-input {
+    cursor: pointer;
+}
