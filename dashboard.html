@@ -31,7 +31,10 @@
       <aside id="sidebar">
         <div class="d-flex justify-content-between p-4">
           <div class="sidebar-logo">
-            <a href="#">Security School</a>
+            <a href="#">
+              <img src="./src/assets/Logo - School security.png" width="30" class="img-fluid rounded-3" alt="logo-app">
+              Security School
+            </a>
           </div>
           <button class="toggle-btn border-0">
             <i id="icon" class="bx bxs-chevrons-right"></i>
@@ -76,48 +79,6 @@
               </li>
             </ul>
           </li>
-          <!-- <li class="sidebar-item">
-            <a
-              href="#"
-              class="sidebar-link collapsed has-dropdown"
-              data-bs-toggle="collapse"
-              data-bs-target="#multi"
-              aria-expanded="false"
-              aria-controls="multi"
-            >
-              <i class="bx bxs-bar-chart-alt-2"></i>
-              <span>Multi Level</span>
-            </a>
-            <ul
-              id="multi"
-              class="sidebar-dropdown list-unstyled collapse"
-              data-bs-parent="#sidebar"
-            >
-              <li class="sidebar-item">
-                <a
-                  href="#"
-                  class="sidebar-link collapsed has-dropdown"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#multi-two"
-                  aria-expanded="false"
-                  aria-controls="multi-two"
-                >
-                  Two Links
-                </a>
-                <ul
-                  id="multi-two"
-                  class="sidebar-dropdown list-unstyled collapse"
-                >
-                  <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">Link 1</a>
-                  </li>
-                  <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">Link 2</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li> -->
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">
               <i class="bx bxs-bell-ring"></i>
@@ -192,74 +153,78 @@
               <h1 class="h3 fw-bold fs-4 mb-3">Gerenciador de Segurança</h1>
               <!-- Cards -->
               <div class="row">
-                <div class="col-12 col-md-4">
-                  <div class="card shadow">
-                    <div class="card-body py-4">
-                      <h2 class="h6 mb-2 fw-bold">Member Progress</h2>
-                      <p class="fw-bold mb-2">$89,1891</p>
-                      <div class="mb-0">
-                        <span class="badge text-success me-2"> +9.0% </span>
-                        <span class="fw-bold"> Since Last Month </span>
+                  <div class="col-12 col-md-3">
+                    <div class="card shadow">
+                      <div class="card-body py-4">
+                        <h2 class="h6 mb-2 fw-bold">Total de Entradas Hoje</h2>
+                        <p class="fw-bold mb-2">120</p>
+                        <span class="badge text-primary me-2"> +8.2% </span>
+                        <span class="fw-bold">em relação a ontem</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card shadow">
-                    <div class="card-body py-4">
-                      <h2 class="h6 mb-2 fw-bold">Member Progress</h2>
-                      <p class="fw-bold mb-2">$89,1891</p>
-                      <div class="mb-0">
-                        <span class="badge text-success me-2"> +9.0% </span>
-                        <span class="fw-bold"> Since Last Month </span>
+                  <div class="col-12 col-md-3">
+                    <div class="card shadow">
+                      <div class="card-body py-4">
+                        <h2 class="h6 mb-2 fw-bold">Visitantes</h2>
+                        <p class="fw-bold mb-2">42</p>
+                        <span class="badge text-success me-2"> +15% </span>
+                        <span class="fw-bold">do total de entradas</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card shadow">
-                    <div class="card-body py-4">
-                      <h2 class="h6 mb-2 fw-bold">Member Progress</h2>
-                      <p class="fw-bold mb-2">$89,1891</p>
-                      <div class="mb-0">
-                        <span class="badge text-success me-2"> +9.0% </span>
-                        <span class="fw-bold"> Since Last Month </span>
+                  <div class="col-12 col-md-3">
+                    <div class="card shadow">
+                      <div class="card-body py-4">
+                        <h2 class="h6 mb-2 fw-bold">Funcionários</h2>
+                        <p class="fw-bold mb-2">35</p>
+                        <span class="badge text-warning me-2"> -2.1% </span>
+                        <span class="fw-bold">em relação a ontem</span>
                       </div>
                     </div>
                   </div>
-                </div>
+                  <div class="col-12 col-md-3">
+                    <div class="card shadow">
+                      <div class="card-body py-4">
+                        <h2 class="h6 mb-2 fw-bold">Alunos</h2>
+                        <p class="fw-bold mb-2">43</p>
+                        <span class="badge text-info me-2"> +4.5% </span>
+                        <span class="fw-bold">em relação a ontem</span>
+                      </div>
+                    </div>
+                  </div>
               </div>
               <!-- Table And Chart -->
               <div class="row">
                 <div class="col-12 col-md-7">
-                  <h1 class="h3 fw-bold fs-4 my-3">User</h1>
+                  <h1 class="h3 fw-bold fs-4 my-3">Registros</h1>
                   <!-- Table -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Visitantes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Funcionários</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Alunos</a>
+                    </li>
+                  </ul>
                   <table class="table table-striped shadow">
-                    <thead>
+                    <thead id="tableHeader">
                       <tr class="highlight">
                         <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sobrenome</th>
+                        <th scope="col">Motivo</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tableBody">
                       <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
                       </tr>
                     </tbody>
                   </table>
@@ -267,9 +232,9 @@
                 <!-- Chart -->
                 <div class="col-12 col-md-5">
                     <h3 class="fw-bold fs-4 my-3">
-                        Reports Overview
+                      Fluxo de Visitantes por Hora
                     </h3>
-                    <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+                    <canvas id="line-chart" width="800" height="450"></canvas>
                 </div>
               </div>
             </div>
@@ -287,13 +252,13 @@
                     <div class="col-6 text-end text-body-secondary d-none d-md-block">
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item">
-                                <a href="#" class="text-secondary">Contact</a>
+                                <a href="#" class="text-secondary">Contato</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="text-secondary">About</a>
+                                <a href="#" class="text-secondary">Sobre</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="text-secondary">Terms & Conditions</a>
+                                <a href="#" class="text-secondary">Termos & Condições</a>
                             </li>
                         </ul>
                     </div>

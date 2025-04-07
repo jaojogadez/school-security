@@ -17,6 +17,9 @@ aside {
 .border {
   border-color: red !important;
 }
+.badge {
+  padding-left: 0;
+}
 /* VIDEO CONFIGS START*/
 /* General Configs */
 a {
@@ -79,6 +82,9 @@ body {
   color: var(--neutral-color);
   font-size: 1.15rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 /* Sidebar Nav Links Config */
 .sidebar-nav {
@@ -212,9 +218,19 @@ a.sidebar-link:hover {
 tr.highlight th{
   background-color: var(--pentenary-color);
   color: var(--neutral-color);
+  border: none;
 }
 .content {
   flex: 11 auto;
+}
+/* Nav Tabs */
+.nav-tabs .nav-item a {
+  color: var(--pentenary-color);
+}
+.nav-tabs .nav-item .active {
+  color: var(--neutral-color);
+  background-color: var(--pentenary-color);
+  border: none;
 }
 /* Footer Content Config */
 footer {
