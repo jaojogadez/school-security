@@ -93,7 +93,7 @@
           </li>
         </ul>
         <div class="sidebar-footer">
-          <a href="#" class="sidebar-link">
+          <a href="#" class="sidebar-link" data-bs-toggle="modal" data-bs-target="#logoutModal">
             <i class="bx bxs-log-out"></i>
             <span>Sair</span>
           </a>
@@ -266,6 +266,24 @@
             </div>
         </footer>
       </main>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="logoutModalLabel">Tem certeza que deseja sair?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           Você poderá acessar novamente. Entre em contato com a equipe de suporte para dúvidas. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger logout-btn">Sair</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Chart JS Library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
