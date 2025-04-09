@@ -1,7 +1,7 @@
 // Elementos HTML
 const navTabs = document.querySelector(".nav-tabs");
 const navLinks = document.querySelectorAll(".nav-tabs .nav-link");
-let currentTab = "Visitantes"; // Define uma aba padrão
+let currentTab = "visitantes"; // Define uma aba padrão
 
 // Exporta a aba selecionada
 export function getCurrentTab() {
@@ -15,7 +15,7 @@ export function changeTab(callback) {
     if (!event.target.classList.contains("nav-link")) {
       return;
     }
-    currentTab = event.target.textContent;
+    currentTab = event.target.dataset.value;
     getActiveTab();
     // Executa função loadTable
     if (callback) {
@@ -28,7 +28,7 @@ export function changeTab(callback) {
 function getActiveTab() {
   navLinks.forEach((link) => {
     link.classList.remove("active");
-    if (link.textContent === currentTab) {
+    if (link.dataset.value === currentTab) {
       link.classList.add("active");
     }
   });

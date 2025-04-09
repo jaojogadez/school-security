@@ -1,24 +1,21 @@
-import { dados } from "./dados.js";
 import { getCurrentTab, changeTab } from "./tabs.js";
-
-// const tableHeader = document.querySelector("#tableHeader");
-const tableBody = document.querySelector("#tableBody");
+import { renderTable } from "./render-table.js";
 
 function loadTable() {
   let currentTab = getCurrentTab();
   try {
     switch (currentTab) {
-      case "Visitantes":
-        console.log("Carregar tabela de visitantes");
+      case "visitantes":
+        renderTable(currentTab);
         break;
-      case "Funcionários":
-        console.log("Carregar tabela de funcionários");
+      case "funcionarios":
+        renderTable(currentTab);
         break;
-      case "Alunos":
-        console.log("Carregar tabela de alunos");
+      case "alunos":
+        renderTable(currentTab);
         break;
       default:
-        console.log("Aconteceu algum erro.");
+        // console.log("Aconteceu algum erro.");
         break;
     }
   } catch (error) {
