@@ -1,7 +1,7 @@
 export const dados = {
   visitantes: [
-    { nome: "Marcos", sobrenome: "Roberto", motivo: "Atestado" },
-    { nome: "Ana", sobrenome: "Silva", motivo: "Buscar filho" },
+    { nome: "Marcos", sobrenome: "Roberto", motivo: "Atestado", hora: "7:30" },
+    { nome: "Ana", sobrenome: "Silva", motivo: "Buscar filho", hora: "11:45" },
   ],
   funcionarios: [
     { nome: "Reiner", setor: "Organização", hora: "8:00" },
