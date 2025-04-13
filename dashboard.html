@@ -116,7 +116,10 @@
             </div>
           </form>
           <div class="navbar-collapse collapse">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <h1 class="fs-4 m-0 p-0" id="security-guard-name">Name</h1>
+              </li>
               <li class="nav-item dropdown">
                 <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
                   <img
@@ -128,18 +131,21 @@
                 <div
                   class="dropdown-menu dropdown-menu-end rounded-0 border-0 shadow mt-3"
                 >
+                  <span class="dropdown-item" id="security-guard-email">
+                    name@email.com
+                  </span>
                   <a href="#" class="dropdown-item">
                     <i class="bx bxs-data"></i>
                     <span>Analytics</span>
                   </a>
                   <a href="#" class="dropdown-item">
                     <i class="bx bxs-cog"></i>
-                    <span>Settings</span>
+                    <span>Congifurações</span>
                   </a>
                   <div class="dropdown-divider"></div>
                   <a href="#" class="dropdown-item">
                     <i class="bx bxs-help-circle"></i>
-                    <span>Help center</span>
+                    <span>Suporte</span>
                   </a>
                 </div>
               </li>
@@ -152,7 +158,7 @@
             <div class="mb-3">
               <h1 class="h3 fw-bold fs-4 mb-3">Gerenciador de Segurança</h1>
               <!-- Cards -->
-              <div class="row">
+              <div class="row" id="overview">
                   <div class="col-12 col-md-3">
                     <div class="card shadow">
                       <div class="card-body py-4">

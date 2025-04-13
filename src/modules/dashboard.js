@@ -58,5 +58,5 @@ new Chart(document.getElementById("line-chart"), {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#sidebar").classList.add("expand");
+  // document.querySelector("#sidebar").classList.add("expand");
 });
