@@ -1,0 +1,90 @@
+<h1 class="h3 fw-bold fs-4 mb-3">Gerenciador de Segurança</h1>
+<!-- Cards -->
+<div class="row" id="overview">
+  <div class="col-12 col-md-3">
+    <div class="card shadow">
+      <div class="card-body py-4">
+        <h2 class="h6 mb-2 fw-bold">Total de Entradas Hoje</h2>
+        <p class="fw-bold mb-2">120</p>
+        <span class="badge text-primary me-2"> +8.2% </span>
+        <span class="fw-bold">em relação a ontem</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card shadow">
+      <div class="card-body py-4">
+        <h2 class="h6 mb-2 fw-bold">Visitantes</h2>
+        <p class="fw-bold mb-2">42</p>
+        <span class="badge text-success me-2"> +15% </span>
+        <span class="fw-bold">do total de entradas</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card shadow">
+      <div class="card-body py-4">
+        <h2 class="h6 mb-2 fw-bold">Funcionários</h2>
+        <p class="fw-bold mb-2">35</p>
+        <span class="badge text-warning me-2"> -2.1% </span>
+        <span class="fw-bold">em relação a ontem</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card shadow">
+      <div class="card-body py-4">
+        <h2 class="h6 mb-2 fw-bold">Alunos</h2>
+        <p class="fw-bold mb-2">43</p>
+        <span class="badge text-info me-2"> +4.5% </span>
+        <span class="fw-bold">em relação a ontem</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Table And Chart -->
+<div class="row">
+  <div class="col-12 col-md-7">
+    <h1 class="h3 fw-bold fs-4 my-3">Registros</h1>
+    <!-- Table -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          data-value="visitantes"
+          >Visitantes</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-value="funcionarios">Funcionários</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-value="alunos">Alunos</a>
+      </li>
+    </ul>
+    <table class="table table-striped shadow">
+      <thead>
+        <tr class="highlight" id="tableHeader">
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Sobrenome</th>
+          <th scope="col">Motivo</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Chart -->
+  <div class="col-12 col-md-5">
+    <h3 class="fw-bold fs-4 my-3">Fluxo de Visitantes por Hora</h3>
+    <canvas id="line-chart" width="800" height="450"></canvas>
+  </div>
+</div>

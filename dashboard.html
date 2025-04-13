@@ -4,14 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Security School - Dashboard</title>
-     <!-- Favicons -->
-     <link rel="icon" type="image/x-icon" href="./src/assets/favicons/favicon.ico">
-     <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicons/favicon-16x16.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicons/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="192x192" href="./src/assets/favicons/android-chrome-192x192.png">
-     <link rel="icon" type="image/png" sizes="512x512" href="./src/assets/favicons/android-chrome-512x512.png">
-     <link rel="apple-touch-icon" href="./src/assets/favicons/apple-touch-icon.png">
-     <!-- Bootstrap CSS -->
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/assets/favicons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/assets/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./src/assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./src/assets/favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/assets/favicons/apple-touch-icon.png"
+    />
+    <!-- Bootstrap CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -27,12 +54,17 @@
   </head>
   <body>
     <div class="wrapper">
-        <!-- Sidebar -->
+      <!-- Sidebar -->
       <aside id="sidebar">
         <div class="d-flex justify-content-between p-4">
           <div class="sidebar-logo">
             <a href="#">
-              <img src="./src/assets/Logo - School security.png" width="30" class="img-fluid rounded-3" alt="logo-app">
+              <img
+                src="./src/assets/Logo - School security.png"
+                width="30"
+                class="img-fluid rounded-3"
+                alt="logo-app"
+              />
               Security School
             </a>
           </div>
@@ -43,13 +75,13 @@
         <!-- Sidebar Links -->
         <ul class="sidebar-nav">
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a class="sidebar-link" data-value="overview">
               <i class="bx bxs-home"></i>
               <span>Visão Geral</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a class="sidebar-link" data-value="cameras">
               <i class="bx bxs-camera"></i>
               <span>Câmeras</span>
             </a>
@@ -72,28 +104,33 @@
               data-bs-parent="#sidebar"
             >
               <li class="sidebar-item">
-                <a href="#" class="sidebar-link"> Registros </a>
+                <a href="#" class="sidebar-link" data-value="controle-registros"> Registros </a>
               </li>
               <li class="sidebar-item">
-                <a href="#" class="sidebar-link"> Cadastrar </a>
+                <a href="#" class="sidebar-link" data-value="controle-cadastrar"> Cadastrar </a>
               </li>
             </ul>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="#" class="sidebar-link" data-value="incidentes">
               <i class="bx bxs-bell-ring"></i>
               <span>Incidentes</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="#" class="sidebar-link" data-value="settings">
               <i class="bx bxs-cog"></i>
               <span>Configurações</span>
             </a>
           </li>
         </ul>
         <div class="sidebar-footer">
-          <a href="#" class="sidebar-link" data-bs-toggle="modal" data-bs-target="#logoutModal">
+          <a
+            href="#"
+            class="sidebar-link"
+            data-bs-toggle="modal"
+            data-bs-target="#logoutModal"
+          >
             <i class="bx bxs-log-out"></i>
             <span>Sair</span>
           </a>
@@ -155,138 +192,72 @@
         <!-- Dashboard -->
         <section class="content px-3 py-4">
           <div class="container-fluid">
-            <div class="mb-3">
-              <h1 class="h3 fw-bold fs-4 mb-3">Gerenciador de Segurança</h1>
-              <!-- Cards -->
-              <div class="row" id="overview">
-                  <div class="col-12 col-md-3">
-                    <div class="card shadow">
-                      <div class="card-body py-4">
-                        <h2 class="h6 mb-2 fw-bold">Total de Entradas Hoje</h2>
-                        <p class="fw-bold mb-2">120</p>
-                        <span class="badge text-primary me-2"> +8.2% </span>
-                        <span class="fw-bold">em relação a ontem</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <div class="card shadow">
-                      <div class="card-body py-4">
-                        <h2 class="h6 mb-2 fw-bold">Visitantes</h2>
-                        <p class="fw-bold mb-2">42</p>
-                        <span class="badge text-success me-2"> +15% </span>
-                        <span class="fw-bold">do total de entradas</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <div class="card shadow">
-                      <div class="card-body py-4">
-                        <h2 class="h6 mb-2 fw-bold">Funcionários</h2>
-                        <p class="fw-bold mb-2">35</p>
-                        <span class="badge text-warning me-2"> -2.1% </span>
-                        <span class="fw-bold">em relação a ontem</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <div class="card shadow">
-                      <div class="card-body py-4">
-                        <h2 class="h6 mb-2 fw-bold">Alunos</h2>
-                        <p class="fw-bold mb-2">43</p>
-                        <span class="badge text-info me-2"> +4.5% </span>
-                        <span class="fw-bold">em relação a ontem</span>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <!-- Table And Chart -->
-              <div class="row">
-                <div class="col-12 col-md-7">
-                  <h1 class="h3 fw-bold fs-4 my-3">Registros</h1>
-                  <!-- Table -->
-                  <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#" data-value="visitantes">Visitantes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-value="funcionarios">Funcionários</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-value="alunos">Alunos</a>
-                    </li>
-                  </ul>
-                  <table class="table table-striped shadow">
-                    <thead>
-                      <tr class="highlight" id="tableHeader">
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Sobrenome</th>
-                        <th scope="col">Motivo</th>
-                      </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- Chart -->
-                <div class="col-12 col-md-5">
-                    <h3 class="fw-bold fs-4 my-3">
-                      Fluxo de Visitantes por Hora
-                    </h3>
-                    <canvas id="line-chart" width="800" height="450"></canvas>
-                </div>
-              </div>
-            </div>
+            <div class="mb-3" id="main-content"></div>
           </div>
         </section>
         <!-- Footer -->
         <footer class="footer">
-            <div class="container-fluid">
-                <div class="row text-body-secondary">
-                    <div class="col-6 text-start">
-                        <a href="#" class="text-secondary">
-                            <strong>Security School</strong>
-                        </a>
-                    </div>
-                    <div class="col-6 text-end text-body-secondary d-none d-md-block">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item">
-                                <a href="#" class="text-secondary">Contato</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-secondary">Sobre</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-secondary">Termos & Condições</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="container-fluid">
+            <div class="row text-body-secondary">
+              <div class="col-6 text-start">
+                <a href="#" class="text-secondary">
+                  <strong>Security School</strong>
+                </a>
+              </div>
+              <div class="col-6 text-end text-body-secondary d-none d-md-block">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="#" class="text-secondary">Contato</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-secondary">Sobre</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-secondary">Termos & Condições</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </footer>
       </main>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      aria-labelledby="logoutModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="logoutModalLabel">Tem certeza que deseja sair?</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="logoutModalLabel">
+              Tem certeza que deseja sair?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-           Você poderá acessar novamente. Entre em contato com a equipe de suporte para dúvidas. 
+            Você poderá acessar novamente. Entre em contato com a equipe de
+            suporte para dúvidas.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger logout-btn">Sair</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger logout-btn">
+              Sair
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
           </div>
         </div>
       </div>
