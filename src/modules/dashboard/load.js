@@ -21,7 +21,11 @@ async function loadPage(pageName) {
 
     if (pageName == "overview") {
       createChart()
+    } 
+    else if (pageName == "cameras") {
+      loadImages()
     }
+
 
   } catch (error) {
     console.log(error);
@@ -48,3 +52,15 @@ $links.forEach((link) => {
     }
   };
 });
+
+function loadImages() {
+  // Corrigir caminhos das imagens nas câmeras
+  const imgElements = document.querySelectorAll('#cameras img');
+  imgElements.forEach(img => {
+    const src = img.getAttribute('src');
+    if (src && src.startsWith('../assets/')) {
+      // Ajustar o caminho para a estrutura correta
+      img.src = src.replace('../assets/', './src/assets/');
+    }
+  });
+}
