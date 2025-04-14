@@ -16,10 +16,15 @@ aside {
   border: 1px solid;
 }
 .border {
-  border-color: red !important;
+  border-color: var(--secondary-neutral) !important;
 }
 .badge {
   padding-left: 0;
+}
+#form-register .badge{
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-weight: 550;
 }
 /* VIDEO CONFIGS START*/
 /* General Configs */
@@ -31,6 +36,18 @@ li {
 }
 body {
   font-family: var(--font);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+.btn-primary:active {
+  transform: scale(0.98);
 }
 /* Wrapper and Main */
 .wrapper {
@@ -241,7 +258,7 @@ a.sidebar-link:hover {
 .btn-light {
   background-color: white;
 }
-.table > thead tr {
+#overview .table > thead tr {
   color: var(--neutral-color);
   text-align: left;
 }
@@ -249,6 +266,28 @@ tr.highlight th{
   background-color: var(--pentenary-color);
   color: var(--neutral-color);
   border: none;
+}
+#control-register-table tr  td  span {
+  border-radius: 4rem;
+  padding: .2rem .5rem;
+  border: 1px solid var(--secondary-neutral);
+  font-size: .9em;
+}
+#control-register-table tr.negative  td  span {
+  border-radius: 4rem;
+  padding: .2rem .5rem;
+  border: 0;
+  font-size: .9em;
+  background-color: #dc3545 ;
+  color: white;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid lightgray;
+  outline: 2px solid var(--primary-color);
+}
+.form-label {
+  cursor: pointer;
 }
 .content {
   flex: 11 auto;

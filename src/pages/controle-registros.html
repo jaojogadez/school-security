@@ -1,0 +1,103 @@
+<div class="d-flex align-items-center justify-content-between flex-wrap">
+  <div>
+    <h1 class="h3 fw-bold fs-4 mb-0">Controle de Acesso</h1>
+    <p class="text-secondary">Gerencie e visualize registros de acessos</p>
+  </div>
+  <button type="button" class="btn btn-primary" id="add-register-btn">
+    <i class="bi bi-person-add me-2"></i>
+    Novo Registro
+  </button>
+</div>
+<div class="container-fluid border rounded-3 p-3">
+  <div class="d-flex align-items-center justify-content-between mb-2">
+    <div>
+      <h2 class="h4 fw-bold m-0">Registros de Acesso</h2>
+      <p class="text-secondary">Histórico e tentativas de acesso</p>
+    </div>
+    <form action="#" class="d-none d-sm-inline-block">
+      <div class="input-group input-group-navbar">
+        <input
+          type="text"
+          class="form-control border-0 rounded-0 pe-0"
+          placeholder="Buscar registros..."
+          aria-label="Search"
+        />
+        <button class="btn border-0 rounded-0" type="button">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <table class="table table-hover border" id="control-register-table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Motivo</th>
+        <th scope="col">Horário</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Carlos Silva</td>
+        <td>Aluno</td>
+        <td>08:32</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr>
+        <td>Maria Oliveira</td>
+        <td>Mãe</td>
+        <td>14:15</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr>
+        <td>Lucas Buim</td>
+        <td>Professor</td>
+        <td>15:27</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr class="negative">
+        <td>Vitor Hugo</td>
+        <td>Desconhecido</td>
+        <td>16:27</td>
+        <td><span>Negado</span></td>
+      </tr>
+      <tr>
+        <td>Deiner</td>
+        <td>Funcionário</td>
+        <td>16:54</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr>
+        <td>Fernando</td>
+        <td>Direção</td>
+        <td>17:05</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr>
+        <td>Yuri Alberto</td>
+        <td>Aluno</td>
+        <td>17:39</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr class="negative">
+        <td>Rafael Veiga</td>
+        <td>Desconhecido</td>
+        <td>18:20</td>
+        <td><span>Negado</span></td>
+      </tr>
+      <tr>
+        <td>Clerbão</td>
+        <td>Informática</td>
+        <td>18:99</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+      <tr>
+        <td>Dona Beth</td>
+        <td>Direção</td>
+        <td>20:00</td>
+        <td><span>Autorizado</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
