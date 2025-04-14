@@ -20,7 +20,7 @@ export function createChart() {
       ],
       datasets: [
         {
-          data: [0, 2, 5, 12, 8, 14, 20, 15, 42, 7, 13, 6, 3, 0],
+          data: [0, 2, 5, 12, 8, 14, 20, 15, 22, 7, 13, 6, 3, 0],
           label: "Entradas",
           borderColor: "#3e95cd",
           backgroundColor: "rgba(62, 149, 205, 0.2)",
