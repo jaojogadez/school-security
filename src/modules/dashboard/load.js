@@ -1,3 +1,5 @@
+import { createChart } from "./chart.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#sidebar").classList.add("expand");
   loadPage("overview");
@@ -16,6 +18,10 @@ async function loadPage(pageName) {
 
     const html = await response.text();
     $mainContent.innerHTML = html;
+
+    if (pageName == "overview") {
+      createChart()
+    }
 
   } catch (error) {
     console.log(error);
